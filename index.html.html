@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in/Sign up</title>
+    <link rel="stylesheet" href="login_page.css">
+    <script src="https://kit.fontawesome.com/90c512adc4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form_box">
+            <h1 class="title">Sign Up</h1>
+            <form>
+                <div class="input_group">
+                    <div class="input_field" id="namefeild">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input_field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input_field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p>forget password?<a href="#click here">Click here</a></p>
+                </div>
+
+                <div class="btn_feild">
+                    <button type="button" id="singupbtn">Sign up</button>
+                    <button type="button" id="signinbtn"class="disable">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--<script>
+
+        let signupbtn = document.getElementById("signupbtn");
+        let signinbtn = document.getElementById("signinbtn");
+        let namefeild = document.getElementById("namefeild");
+        let title = document.getElementById("title");
+        
+        signinbtn.onclick = function(){
+            namefeild.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupbtn.classList.add("disable");
+            signinbtn.classList.remove("disable");
+        }
+        signupbtn.onclick = function(){
+            namefeild.style.maxHeight = "60px";
+            title.innerHTML = "Sign Un";
+            signupbtn.classList.remove("disable");
+            signinbtn.classList.add("disable");
+    </script>-->
+</body>
+</html>
